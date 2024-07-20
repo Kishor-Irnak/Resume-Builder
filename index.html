@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+
+            <h2>Education</h2>
+            <label for="school">School:</label>
+            <input type="text" id="school" required>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" required>
+            <label for="edu-start-date">Start Date:</label>
+            <input type="date" id="edu-start-date" required>
+            <label for="edu-end-date">End Date:</label>
+            <input type="date" id="edu-end-date" required>
+
+            <h2>Work Experience</h2>
+            <label for="company">Company:</label>
+            <input type="text" id="company" required>
+            <label for="title">Job Title:</label>
+            <input type="text" id="title" required>
+            <label for="work-start-date">Start Date:</label>
+            <input type="date" id="work-start-date" required>
+            <label for="work-end-date">End Date:</label>
+            <input type="date" id="work-end-date" required>
+            <label for="responsibilities">Responsibilities:</label>
+            <textarea id="responsibilities" required></textarea>
+
+            <h2>Skills</h2>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" placeholder="e.g., JavaScript, HTML, CSS" required>
+
+            <h2>Certifications</h2>
+            <label for="certifications">Certifications:</label>
+            <input type="text" id="certifications" placeholder="e.g., AWS Certified Solutions Architect">
+
+       
+        </form>
+
+        <button id="download-pdf">Download PDF</button>
+
+        <div id="resume-preview">
+            <h2>Download Resume</h2>
+            <div id="personal-info"></div>
+            <div id="education"></div>
+            <div id="work-experience"></div>
+            <div id="skills-section"></div>
+            <div id="certifications-section"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
